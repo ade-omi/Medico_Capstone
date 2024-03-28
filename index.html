@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Medico Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="Sidebar" style="width:25%">
+  <img src="/images/medico-icon.jpeg" style="width:50%">
+  <h3 class="">MEDICO</h3>
+  <a href="#" class="block">Home </a>
+  <a href="prescription.html" class="block">Prescriptions</a>
+  <a href="appointments.html" class="block">Appointments</a>
+  <a href="#" class="block">Logout</a>
+</div>
+
+<!-- Page Content -->
+<div style="margin-left:25%">
+    <div class="Container1">
+        <main>
+            <h1>My Page</h1>
+            <p>Welcome User...</p>
+            <img src="/images/user_image.png" alt="UserImage" style="width:10%">
+        </main>
+    </div>
+
+    <div class="Container">
+        <div class="dashboard-container">
+            <div class="Container choices">
+                <div class="choices">
+                    <div class="account-setting">
+                        <button class="button">Account Setting</button>
+                    </div>
+                    <div class="book-appointment">
+                        <button class="button">Book Appointment</button>
+                    </div>
+                    <div class="view-prescription">
+                        <button class="button">View Prescription</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Container appointments">
+                <div class="appointments">
+                    <h3>Appointments:</h3>
+                    <div id="appointmentTable" class="apt-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Patient Name</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Reson</th>
+                                    <th>Delete</th>
+                                    <th>Edit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>2024-03-20</td>
+                                    <td>10:00 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Smith</td>
+                                    <td>2024-03-21</td>
+                                    <td>11:30 AM</td>
+                                </tr>
+                                <!-- Add more rows for additional appointments -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="scripts.js"></script>
+
+</body>
+</html>
