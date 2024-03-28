@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Patient</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/screen_size.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../images/medico-icon.jpeg" alt="Medico App Logo">
+        </a>
+        <h1>Login as Patient</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="loginForm" action="/login-patient" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup-patient.html">Sign up here</a></p>
+        </div>
+    </main>
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

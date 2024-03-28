@@ -1,0 +1,26 @@
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .container {
+      width: 95%;
+  }
+
+  .main-navigation {
+      flex-direction: column;
+  }
+
+  .main-navigation-link {
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-navigation-link {
+      margin: 0 10px 10px; /* Adjust margin for smaller screens */
+  }
+}

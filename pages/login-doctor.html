@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Doctor</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/screen_size.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../images/medico-icon.jpeg" alt="Medico App Logo">
+        </a>
+        <h1>Login as Doctor</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="loginForm" onsubmit="handleDoctorLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script>
+        function handleDoctorLogin(event) {
+            event.preventDefault();
+          
+            // If login is successful, redirect to the doctor dashboard page
+            window.location.href = 'doctor-dashboard.html';
+        }
+    </script>
+</body>
+</html>
