@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Medico</title>
+    <link rel="stylesheet" href="../../Styles/general.css">
+    <style>
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container label, .form-container input, .form-container select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        #appointmentConfirmation {
+            display: none;
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            color: #3c763d;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="/Images/medico-icon.jpeg" width="300" height="300" alt="Medico App Logo">
+        </a>
+        <h1>Book an Appointment</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="appointmentForm">
+                <label for="doctorName">Select Doctor:</label>
+                <select id="doctorName" name="doctorName" required>
+                    <option value="">--Please choose a doctor--</option>
+                    <option value="Dr. Smith">Dr. Smith</option>
+                    <option value="Dr. Johnson">Dr. Johnson</option>
+                    <option value="Dr. Williams">Dr. Williams</option>
+                    <option value="Dr. Brown">Dr. Brown</option>
+                    <option value="Dr. Davis">Dr. Davis</option>
+                </select>
+
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+                <label for="appointmentTime">Appointment Time:</label>
+                <select id="appointmentTime" name="appointmentTime" required>
+                    <option value="">--Please select a date first--</option>
+                </select>
+
+                <label for="reason">Reason for Visit:</label>
+                <input type="text" id="reason" name="reason" required minlength="10">
+                <span id="reasonError" class="error"></span>
+
+                <input type="submit" value="Book Appointment">
+            </form>
+            <div id="appointmentConfirmation"></div>
+        </div>
+    </main>
+    <script>
+        // Mock data for doctor schedules
+        const doctorSchedules = {
+            "Dr. Smith": ["09:00", "10:00", "11:00", "14:00", "15:00"],
+            "Dr. Johnson": ["10:00", "11:00", "13:00", "14:00", "16:00"],
+            "Dr. Williams": ["09:00", "11:00", "13:00", "15:00", "17:00"],
+            "Dr. Brown": ["08:00", "10:00", "12:00", "14:00", "16:00"],
+            "Dr. Davis": ["09:00", "11:00", "14:00", "16:00", "18:00"]
+        };
+
+        const doctorSelect = document.getElementById('doctorName');
+        const dateInput = document.getElementById('appointmentDate');
+        const timeSelect = document.getElementById('appointmentTime');
+        const reasonInput = document.getElementById('reason');
+        const reasonError = document.getElementById('reasonError');
+
+        doctorSelect.addEventListener('change', updateTimeSlots);
+        dateInput.addEventListener('change', updateTimeSlots);
+
+        function updateTimeSlots() {
+            const selectedDoctor = doctorSelect.value;
+            timeSelect.innerHTML = '<option value="">--Please choose a time--</option>';
+            
+            if (selectedDoctor && dateInput.value) {
+                const availableTimes = doctorSchedules[selectedDoctor];
+                availableTimes.forEach(time => {
+                    const option = document.createElement('option');
+                    option.value = time;
+                    option.textContent = time;
+                    timeSelect.appendChild(option);
+                });
+            }
+        }
+
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validate reason field
+            if (reasonInput.value.length < 10) {
+                reasonError.textContent = "Reason must be at least 10 characters long.";
+                return;
+            } else {
+                reasonError.textContent = "";
+            }
+
+            // In a real application, you would send this data to a server here
+            // For now, we'll just display a confirmation message
+            var doctor = doctorSelect.value;
+            var date = dateInput.value;
+            var time = timeSelect.value;
+            var reason = reasonInput.value;
+
+            var confirmationMessage = `Appointment booked with ${doctor} on ${date} at ${time} for ${reason}.`;
+            
+            var confirmationDiv = document.getElementById('appointmentConfirmation');
+            confirmationDiv.textContent = confirmationMessage;
+            confirmationDiv.style.display = 'block';
+
+            // Clear the form
+            this.reset();
+            timeSelect.innerHTML = '<option value="">--Please select a date first--</option>';
+        });
+
+        // Set minimum date to today
+        var today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+    </script>
+</body>
+</html>

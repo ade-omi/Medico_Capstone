@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Display</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/screen_size.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/display.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../images/medico-icon.jpeg" alt="Medico App Logo">
+        </a>
+        <h1>Patient Information</h1>
+    </header>
+    <main>
+        <div id="patientInfo">
+            <!-- Dynamic patient information will be displayed here -->
+        </div>
+        <form id="prescriptionForm" class="hidden">
+            <h2>Edit Prescription</h2>
+            <label for="drugName">Drug Name:</label>
+            <input type="text" id="drugName" name="drugName" required>
+
+            <label for="dosageInstruction">Dosage Instruction:</label>
+            <input type="text" id="dosageInstruction" name="dosageInstruction" required>
+
+            <label for="issueDate">Issue Date:</label>
+            <input type="date" id="issueDate" name="issueDate" required>
+
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <button type="submit">Save Changes</button>
+        </form>
+        <div id="prescriptionsContainer">
+            <h2>Prescriptions</h2>
+            <!-- Dynamic prescription information will be displayed here -->
+        </div>
+        <button id="backButton" onclick="window.history.back();">Back</button>
+    </main>
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script src="../js/display.js"></script>
+</body>
+</html>

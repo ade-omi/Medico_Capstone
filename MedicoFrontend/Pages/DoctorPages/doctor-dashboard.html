@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="../../Styles/general.css">
+    <link rel="stylesheet" href="../../Styles/screen_size.css">
+    <link rel="stylesheet" href="../../Styles/styleRamanooj.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../../Images/medico-icon.jpeg" alt="Medico App Logo">
+        </a>
+        <h1>Doctor Dashboard</h1>
+    </header>
+    <main>
+        <button onclick="window.location.href='patient-list.html'">View Patient List</button>
+        
+        <!-- Section for doctor to allocate time slots -->
+        <section class="dashboard-section">
+            <h2>Allocate Available Appointment Times</h2>
+            <form id="appointmentSlotForm">
+                <label for="appointmentDate">Appointment Date:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required><br>
+
+                <label for="appointmentTime">Appointment Time:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime" required><br>
+
+                <button type="submit">Allocate Time</button>
+            </form>
+            <div id="allocationStatus"></div>
+        </section>
+        
+        
+        <!-- Display current appointments and patients -->
+        <section class="dashboard-section">
+            <h2>Current Appointments</h2>
+            <div id="appointmentsContainer"></div>
+        </section>
+  
+       <section>
+        <h2>Booked Appointments</h2>
+        <div id="bookedAppointmentsContainer"></div>
+    </section> 
+   
+
+        
+        <section class="dashboard-section">
+            <h2>Current Patient</h2>
+            <div id="currentPatientContainer"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script src="/Scripts/doctor-dashboard.js"></script>
+</body>
+</html>
