@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="/Images/medico-icon.jpeg" />
+    <link rel="stylesheet" href="/Styles/styleCon.css">
+    <!-- <img class="logo" src="/Images/medico-icon.jpeg" alt="Medico App Logo" style="width:27%"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Medico Video Consultation</title>
+    <style>
+     
+    </style>
+  </head>
+  <body>
+
+    
+<!-- Sidebar -->
+<div class="Sidebar" style="width:25%">
+    <img src="/images/medico-icon.jpeg" style="width:50%">
+    <h3 class="">MEDICO</h3>
+    <a href="#" class="block">Home </a>
+    <a href="prescription.html" class="block">Prescriptions</a>
+    <a href="../AppointmentPages/appointments.html" class="block">Appointments</a>
+    <a href="#" class="block">Logout</a>
+  </div>
+  <button id="toggle-nav">Toggle Navigation</button>
+
+    <h1>Medico Video Call</h1>
+    <h2>1. Start your Camera</h2>
+    <div class="videos">
+      <span>
+        <h3>You (Patient)</h3>
+        <video id="patientVideo" autoplay playsinline></video>
+      </span>
+      <span>
+        <h3>Doctor</h3>
+        <video id="doctorVideo" autoplay playsinline></video>
+      </span>
+    </div>
+    <button id="cameraButton">Start Camera</button>
+    <button id="stopCameraButton" disabled>Stop Camera</button>
+    <h2>2. Start a Consultation</h2>
+    <button id="callButton" disabled>Start Consultation</button>
+    <h2>3. Join a Consultation</h2>
+    <p>Enter the consultation code provided by your healthcare provider:</p>
+    <input id="consultationInput" placeholder="Enter consultation code" />
+    <button id="joinButton" disabled>Join Consultation</button>
+    <h2>4. End Consultation</h2>
+    <button id="endButton" disabled>End Consultation</button>
+    <script type="module" src="/Scripts/videoCon.js"></script>
+  </body>
+</html>

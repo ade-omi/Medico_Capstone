@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Patient Medicines</title>
+    <link rel="stylesheet" href="../../Styles/general.css">
+    <link rel="stylesheet" href="../../Styles/screen_size.css">
+    <link rel="stylesheet" href="../../Styles/styleRamanooj.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../doctor-dashboard.html">
+            <img class="logo" src="../images/medico-icon.jpeg" alt="Medico App Logo">
+        </a>
+        <h1>Manage Patient Medicines</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="medicinesForm">
+                <label for="patientName">Patient Name:</label>
+                <input type="text" id="patientName" name="patientName" required><br>
+
+                <label for="medicines">Prescribed Medicines:</label>
+                <textarea id="medicines" name="medicines" rows="4" cols="50" required></textarea><br>
+
+                <button type="submit">Update Medicines</button>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script src="../js/patient-medicines.js"></script>
+</body>
+</html>

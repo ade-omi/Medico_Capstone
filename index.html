@@ -1,0 +1,337 @@
+<!-- Ramanooj's Code without CSS -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medico App</title>
+    <link rel="stylesheet" href="Styles/general.css">
+    <link rel="stylesheet" href="Styles/screen_size.css">
+    <link rel="stylesheet" href="Styles/styleRamanooj.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#">
+            <img class="logo" src="images/medico-icon.jpeg" alt="Medico App Logo">
+        </a>
+        <h1>Welcome to Medico</h1>
+    </header>
+    <main>
+        <nav class="main-navigation">
+            <ul class="main-navigation-list">
+                
+                <li><a class="main-navigation-link" href="Pages/PatientPages/login-patient.html">Login as Patient</a></li><br>
+                <li><a class="main-navigation-link" href="pages/PatientPages/signup-patient.html">Sign Up as Patient</a></li><br>
+                <li><a class="main-navigation-link" href="pages/DoctorPages/login-doctor.html">Login as Doctor</a></li>
+                
+            </ul>
+        </nav>
+    </main>
+    <footer class="footer">
+        <!-- Footer content 
+    </footer>
+</body>
+</html> -->
+
+<!-- Vyom's Code with CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Links Fonts and Styles -->
+
+    <!-- Font -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+     
+  <!-- Styles -->
+
+  <link rel="stylesheet" href="./Styles/stylecss.css">
+  <link rel="stylesheet" href="./Styles/general.css">
+  <link rel="stylesheet" href="./Styles/queries.css">
+
+  <!-- Scripts -->
+
+  <link rel="Scripts" href="./Script/script.js">
+
+  <!-- Favicon -->
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule=""
+  src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+></script>
+
+<script
+  defer
+  src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+></script>
+
+  <title>Medico</title>
+</head>
+
+
+<body>
+    <!-- header starts here -->
+    <header class="header">
+        <a href="#">
+          <img class="logo" alt="Medico" src="./Images/medico.jpeg" />
+        </a>
+  
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#how">How it works</a></li>
+            <li><a class="main-nav-link" href="#meals">Appointments</a></li>
+            <li><a class="main-nav-link" href="#pricing">Priscription</a></li>
+            <li><a class="main-nav-link" href="Pages/PatientPages/login-patient.html">Patient Login</a></li>
+            <li><a class="main-nav-link" href="Pages/PatientPages/signup-patient.html">Patient Signup</a></li>
+            <li><a class="main-nav-link" href="Pages/DoctorPages/login-doctor.html">Doctor Login</a></li>
+            <li><a class="main-nav-link nav-cta" href="#cta">Sign up for Free</a></li>
+          </ul>
+        </nav>
+  
+        <!-- Buttons for Mobile(small screens) -->
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+    <main>
+
+        <section class="section-hero">
+            <div class="hero">
+              <div class="hero-text-box">
+                <h1 class="heading-primary">
+                 Good Line here
+                </h1>
+                <p class="hero-description">
+                  Description of the website
+                </p>
+                <a href="#cta" class="btn btn--full margin-right-sm"
+                  >Start feeling well</a
+                >
+    
+                <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+                
+              </div>
+              <div class="hero-img-box">
+                <picture>
+                  <img
+                    src="./Images/doctor.jpeg"
+                    class="hero-img"
+                    alt="Doctor Image"
+                  />
+                </picture>
+              </div>
+            </div>
+          </section>
+
+          <section class="section-how" id="how">
+            <div class="container">
+              <span class="subheading">How it works</span>
+              <h2 class="heading-secondary">
+                One good line here!!!
+              </h2>
+            </div>
+    
+            <div class="container grid grid--2-cols grid--center-v">
+              <!-- STEP 01 -->
+              <div class="step-text-box">
+                <p class="step-number">01</p>
+                <h3 class="heading-tertiary">
+                  Tell us what happened to you
+                </h3>
+                <p class="step-description">
+                  A long paragraph here
+                </p>
+              </div>
+    
+              <div class="step-img-box">
+                <img
+                  src="img/app/app-screen-1.png"
+                  class="step-img"
+                  alt=""
+                />
+              </div>
+    
+              <!-- STEP 02 -->
+              <div class="step-img-box">
+                <img
+                  src="img/app/app-screen-2.png"
+                  class="step-img"
+                  alt=""
+                />
+              </div>
+              <div class="step-text-box">
+                <p class="step-number">02</p>
+                <h3 class="heading-tertiary">Step 2</h3>
+                <p class="step-description">
+                  Another long paragraph here.
+                </p>
+              </div>
+    
+              <!-- STEP 03 -->
+              <div class="step-text-box">
+                <p class="step-number">03</p>
+                <h3 class="heading-tertiary">Step 3 </h3>
+                <p class="step-description">
+                  Yet Another long paragraph here.
+                </p>
+              </div>
+              <div class="step-img-box">
+                <img
+                  src="img/app/app-screen-3.png"
+                  class="step-img"
+                  alt=""
+                />
+              </div>
+            </div>
+
+          </section>
+
+          <section class="section-cta" id="cta">
+            <div class="container">
+              <div class="cta">
+                <div class="cta-text-box">
+                  <h2 class="heading-secondary">Get your first meal for free!</h2>
+                  <p class="cta-text">
+                    A small paragrpah here
+                  </p>
+    
+                  <form class="cta-form" name="sign-up" netlify>
+                    <div>
+                      <label for="full-name">Full Name</label>
+                      <input
+                        id="full-name"
+                        type="text"
+                        placeholder="John Smith"
+                        name="full-name"
+                        required
+                      />
+                    </div>
+    
+                    <div>
+                      <label for="email">Email address</label>
+                      <input
+                        id="email"
+                        type="email"
+                        placeholder="me@example.com"
+                        name="email"
+                        required
+                      />
+                    </div>
+    
+                    <div>
+                      <label for="select-where">Where did you hear from us?</label>
+                      <select id="select-where" name="select-where" required>
+                        <option value="">Please choose one option:</option>
+                        <option value="friends">Friends and family</option>
+                        <option value="youtube">YouTube video</option>
+                        <option value="podcast">Podcast</option>
+                        <option value="ad">Facebook ad</option>
+                        <option value="others">Others</option>
+                      </select>
+                    </div>
+    
+                    <button class="btn btn--form">Sign up now</button>
+    
+                    
+                  </form>
+                </div>
+                <div
+                  class="cta-img-box"
+                  role="img"
+                  aria-label="Woman enjoying food"
+                ></div>
+              </div>
+            </div>
+          </section>
+
+
+
+    </main>
+
+    <!-- Footer starts here -->
+    <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="#" class="footer-logo">
+              <img class="logo" alt="Medico Logo" src="./Images/medico.jpeg" />
+            </a>
+  
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+  
+            <p class="copyright">
+              Copyright &copy; <span class="year">2024</span> by Medico, Inc.
+              All rights reserved.
+            </p>
+          </div>
+  
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">
+                7899 McLaughlin Rd, Brampton, ON L6Y0P8
+              </p>
+              <p>
+                <a class="footer-link" href="tel:415-201-6370">888-999-7777</a
+                ><br />
+                <a class="footer-link" href="hello@medico.com"
+                  >hello@medico.com</a
+                >
+              </p>
+            </address>
+          </div>
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Create account</a></li>
+              <li><a class="footer-link" href="#">Sign in</a></li>
+
+            </ul>
+          </nav>
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">About Medico</a></li>
+              <li><a class="footer-link" href="#">For Business</a></li>
+
+            </ul>
+          </nav>
+  
+          <nav class="nav-col">
+            <p class="footer-heading">Resources</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Help center</a></li>
+              <li><a class="footer-link" href="#">Privacy [&] terms</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+</body>
+</html>

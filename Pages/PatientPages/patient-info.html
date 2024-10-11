@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information</title>
+    <link rel="stylesheet" href="../../Styles/general.css">
+    <link rel="stylesheet" href="../../Styles/screen_size.css">
+    <link rel="stylesheet" href="../../Styles/styleRamanooj.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img class="logo" src="../images/medico-icon.jpeg" alt="Medico App Logo">
+        </a>
+        <h1>Patient Information</h1>
+    </header>
+    <main>
+        <div id="patientInfo">
+            <!-- Patient information will be displayed here by patient-info.js -->
+        </div>
+        <div id="patientMedicines">
+            <h2>Prescribed Medicines</h2>
+            <!-- Prescribed medicines will be displayed here by patient-info.js -->
+        </div><br>
+        <button onclick="editPatient()">Edit Patient Info</button>
+
+        <br>
+        <br>
+        <button onclick="window.location.href='patient-list.html'">Back</button>
+    </main>
+    <footer class="footer">
+        <!-- Footer content -->
+    </footer>
+    <script src="../js/patient-info.js"></script>
+</body>
+</html>
