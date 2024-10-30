@@ -15,12 +15,11 @@ export default function PatientCareSection() {
         {/* Text Section */}
         <div data-aos="fade-right" className="space-y-6">
           <button className="bg-gray-800 text-white py-2 px-4 rounded-full">
-            What makes us different
+            Why choose Us
           </button>
           <h2 className="text-7xl font-normal font-lora">Patient-centered care</h2>
           <p className="text-gray-600 font-montserrat text-lg">
-            This is the space to introduce the Services section. Briefly describe the types of
-            services offered and highlight any special benefits or features.
+            <q>With a commitment to patient satisfaction and healthcare innovation, we’re transforming how you access medical care</q>
           </p>
         </div>
 

@@ -34,7 +34,7 @@ function DoctorDashboard() {
                                     <td className="border p-2">John Doe</td>
                                     <td className="border p-2">Routine Checkup</td>
                                 </tr>
-                                {/* More rows can be added here */}
+                                
                             </tbody>
                         </table>
                     </div>
@@ -59,7 +59,7 @@ function DoctorDashboard() {
                                     <td className="border p-2">555-123-4567</td>
                                     <td className="border p-2">Hypertension</td>
                                 </tr>
-                                {/* More rows can be added here */}
+                         
                             </tbody>
                         </table>
                     </div>
@@ -84,7 +84,7 @@ function DoctorDashboard() {
                                     <td className="border p-2">10 mg</td>
                                     <td className="border p-2">Once Daily</td>
                                 </tr>
-                                {/* More rows can be added here */}
+                                
                             </tbody>
                         </table>
                     </div>

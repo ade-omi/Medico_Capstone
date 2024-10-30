@@ -9,7 +9,7 @@ export default function NavbarSection() {
   }, []);
 
   const handleAppointmentClick = () => {
-    window.location.href = '/patient-login'; // Replace with the correct URL of your sign-in page
+    window.location.href = '/patient-login'; 
   };
 
   return (
@@ -25,11 +25,11 @@ export default function NavbarSection() {
         data-aos="fade-up"
       >
         <p className="font-montserrat text-xl font-medium mb-2">
-          Family Medical Center in San Francisco
+          Family Healthcare System in Canada
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-9xl font-lora font-bold mt-2 leading-tight">
           Healthcare <br />
-          focused on you
+          one click away
         </h1>
         <button
           className="bg-yellow-200 text-blue-900 font-semibold py-3 px-6 rounded-full mt-6 hover:bg-yellow-300"

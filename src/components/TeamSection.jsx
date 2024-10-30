@@ -15,12 +15,12 @@ export default function TeamAndTestimonials() {
         {/* Our Team Section */}
         <div data-aos="fade-right" className="space-y-6">
           <button className="bg-gray-800 text-white py-2 px-4 rounded-full">
-            Our team
+            Meet Our Experts
           </button>
           <h2 className="text-6xl font-normal font-lora">The faces behind our <br /> exceptional care</h2>
           <p className="text-gray-600 text-lg font-montserrat">
-            This is the space to introduce the Services section. Briefly describe the types of <br/>
-            services offered and highlight any special benefits or features.
+            At our healthcare system, you&#39;re in trusted hands <br/>
+            
           </p>
         </div>
 
@@ -95,27 +95,21 @@ export default function TeamAndTestimonials() {
           {/* Testimonial 1 */}
           <div className="bg-white rounded-3xl p-8 shadow-md">
             <blockquote className="text-gray-600 italic text-lg mb-4">
-            <q>Use this space to share a testimonial quote about the business, its products, or
-              its services. Insert a quote from a real customer or client here to build trust and
-              win over site visitors.</q>
+            <q>Booking an appointment has never been easier! The online syste is user-friendlyk, and I felt cared for every step of the way.</q>
             </blockquote>
             <p className="text-gray-900 font-bold">Shimit D.</p>
           </div>
           {/* Testimonial 2 */}
           <div className="bg-white rounded-3xl p-8 shadow-md">
             <blockquote className="text-gray-600 italic text-lg mb-4">
-            <q>Use this space to share a testimonial quote about the business, its products, or
-              its services. Insert a quote from a real customer or client here to build trust and
-              win over site visitors.</q>
+            <q>From the online booking to my consultation, everything was seamless and professional.Highly recommend!</q>
             </blockquote>
             <p className="text-gray-900 font-bold">Ella H.</p>
           </div>
           {/* Testimonial 3 */}
           <div className="bg-white rounded-3xl p-8 shadow-md">
             <blockquote className="text-gray-600 italic text-lg mb-4">
-              <q>Use this space to share a testimonial quote about the business, its products, or
-              its services. Insert a quote from a real customer or client here to build trust and
-              win over site visitors.</q>
+              <q>I finally found a healthcare team that genuinely cares. The experience was amazing, and I didn&#39;t have to wait weeks to get an appointment.</q>
             </blockquote>
             <p className="text-gray-900 font-bold">Amanda B.</p>
           </div>

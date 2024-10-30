@@ -21,6 +21,8 @@ export default function Footer() {
           <p>Brampton, ON L6Y 0J8</p>
         </div>
 
+        {/* Some Fancy way of Footer */}
+
         {/* Social Links */}
         {/* <div className="md:col-span-1 space-y-4">
           <h4 className="font-semibold">Social</h4>
@@ -29,21 +31,22 @@ export default function Footer() {
         </div> */}
 
         {/* Legal Information */}
-        <div className="md:col-span-1 space-y-4">
+        {/* <div className="md:col-span-1 space-y-4">
           <h4 className="font-semibold">Legal</h4>
           <p>Privacy policy</p>
           <p>Accessibility Statement</p>
-        </div>
+        </div> */}
 
         {/* Menu */}
-        <div className="md:col-span-1 space-y-4">
+        {/* <div className="md:col-span-1 space-y-4">
           <h4 className="font-semibold">Menu</h4>
           <p>About</p>
           <p>Services</p>
           <p>Insurance</p>
           <p>Contact</p>
           <p>FAQ</p>
-        </div>
+        </div> */}
+
       </div>
 
       {/* Bottom Copyright Section */}

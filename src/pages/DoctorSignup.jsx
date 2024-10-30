@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const DoctorSignupSection = () => {
     return ( 
@@ -67,15 +68,15 @@ const DoctorSignupSection = () => {
             </form>
             <p className="text-center mt-4">
               Already have an account?{' '}
-              <a href="#" className="text-indigo-600 hover:underline">
+              <Link to="/doctor-login" className="text-indigo-600 hover:underline">
                 Log in
-              </a>
+              </Link>
             </p>
           </div>
         </div>
         <div className="hidden md:block md:w-1/2">
           <img
-            src=".././src/assets/img5.jpg"
+            src=".././src/assets/image2.jpeg"
             alt="Doctor with medical equipment"
             className="w-full h-full rounded-lg shadow-md"
           />

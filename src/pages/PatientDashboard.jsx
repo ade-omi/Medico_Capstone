@@ -34,7 +34,7 @@ function Dashboard() {
                                     <td className="border p-2">Dr. Smith</td>
                                     <td className="border p-2">Routine Checkup</td>
                                 </tr>
-                                {/* More rows can be added here */}
+                              
                             </tbody>
                         </table>
                     </div>
@@ -59,7 +59,7 @@ function Dashboard() {
                                     <td className="border p-2">Once Daily</td>
                                     <td className="border p-2">Dr. Adams</td>
                                 </tr>
-                                {/* More rows can be added here */}
+                                
                             </tbody>
                         </table>
                     </div>

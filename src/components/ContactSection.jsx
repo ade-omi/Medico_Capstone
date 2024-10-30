@@ -76,7 +76,8 @@ export default function ContactUsSection() {
               ></textarea>
             </div>
 
-            <div className="flex items-center">
+            {/* Don't need this section now.  */}
+            {/* <div className="flex items-center">
               <input
                 id="newsletter"
                 type="checkbox"
@@ -85,7 +86,7 @@ export default function ContactUsSection() {
               <label htmlFor="newsletter" className="ml-2 block text-sm text-gray-700">
                 Yes, subscribe me to your newsletter.
               </label>
-            </div>
+            </div> */}
 
             <button
               type="submit"
@@ -96,10 +97,10 @@ export default function ContactUsSection() {
           </form>
         </div>
 
-        {/* Contact Image */}
+        {/* Image Section */}
         <div data-aos="fade-left" className="rounded-3xl overflow-hidden shadow-lg bg-[#FFF4C3] p-4">
           <img
-            src="./src/assets/img5.jpg" // Replace with actual image URL
+            src="./src/assets/img5.jpg" 
             alt="Contact Us"
             className="w-full h-auto object-cover rounded-2xl"
           />
