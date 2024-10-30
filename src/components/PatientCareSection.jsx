@@ -17,34 +17,34 @@ export default function PatientCareSection() {
           <button className="bg-gray-800 text-white py-2 px-4 rounded-full">
             What makes us different
           </button>
-          <h2 className="text-7xl font-normla font-lora">Patient-centered care</h2>
+          <h2 className="text-7xl font-normal font-lora">Patient-centered care</h2>
           <p className="text-gray-600 font-montserrat text-lg">
             This is the space to introduce the Services section. Briefly describe the types of
             services offered and highlight any special benefits or features.
           </p>
         </div>
 
-        
+        {/* Cards Section */}
         <div
-          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 align-middle "
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10"
           data-aos="fade-up"
         >
-          <div className="p-8 bg-[#A35220] rounded-2xl text-white font-lora text-center text-4xl shadow-md h-72">
+          <div className="flex items-center justify-center p-8 bg-[#A35220] rounded-2xl text-white font-lora text-4xl shadow-md h-72">
             Holistic care
           </div>
-          <div className="p-8 bg-[#DDE9FF] rounded-full text-center shadow-md font-lora text-4xl">
+          <div className="flex items-center justify-center p-8 bg-[#DDE9FF] rounded-full text-center shadow-md font-lora text-4xl h-72">
             Personalized plans
           </div>
-          <div className="p-8 bg-[#4A5653] rounded-2xl text-white text-center font-lora text-4xl shadow-md">
+          <div className="flex items-center justify-center p-8 bg-[#4A5653] rounded-2xl text-white font-lora text-4xl shadow-md h-72">
             Experienced staff
           </div>
-          <div className="p-8 bg-[#B5D4C5] rounded-full text-center shadow-md font-lora text-4xl h-72">
+          <div className="flex items-center justify-center p-8 bg-[#B5D4C5] rounded-full text-center shadow-md font-lora text-4xl h-72">
             Advanced technology
           </div>
-          <div className="p-8 bg-[#5E6A9C] rounded-2xl text-white text-center shadow-md text-4xl font-lora">
+          <div className="flex items-center justify-center p-8 bg-[#5E6A9C] rounded-2xl text-white shadow-md text-4xl font-lora h-72">
             Family support
           </div>
-          <div className="p-8 bg-[#FFF4C3] rounded-full text-center  shadow-md font-lora text-4xl">
+          <div className="flex items-center justify-center p-8 bg-[#FFF4C3] rounded-full text-center shadow-md font-lora text-4xl h-72">
             Online appointments
           </div>
         </div>
